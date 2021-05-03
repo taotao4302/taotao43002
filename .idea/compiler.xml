@@ -32,7 +32,7 @@
       <module name="taotao-parent" target="1.7" />
       <module name="taotao-search" target="1.7" />
       <module name="taotao-search-interface" target="1.7" />
-      <module name="taotao-search-service" target="1.8" />
+      <module name="taotao-search-service" target="1.7" />
       <module name="toatao-manager" target="1.8" />
     </bytecodeTargetLevel>
   </component>
