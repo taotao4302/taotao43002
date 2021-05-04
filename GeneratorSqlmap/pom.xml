@@ -8,6 +8,11 @@
     <artifactId>GeneratorSqlmap</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.2.8</version>
+        </dependency>
         <!--逆向工程-->
         <dependency>
             <groupId>org.mybatis.generator</groupId>
