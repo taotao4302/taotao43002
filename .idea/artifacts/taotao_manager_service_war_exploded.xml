@@ -17,7 +17,7 @@
           <element id="archive" name="taotao-manager-dao-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-manager-dao" />
           </element>
-          <element id="archive" name="taotao-manager-pojo-1.0-SNAPSHOT.jar">
+          <element id="archive" name="taotao-manager-com.taotao.pojo-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-manager-pojo" />
           </element>
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.8" />

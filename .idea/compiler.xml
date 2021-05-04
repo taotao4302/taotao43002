@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="taotao-content-service" />
         <module name="taotao-manager-interface" />
+        <module name="GeneratorSqlmap" />
         <module name="taotao-content-interface" />
         <module name="taotao-manager-service" />
         <module name="taotao-manager-web" />
@@ -19,6 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="GeneratorSqlmap" target="1.8" />
       <module name="taotao-common" target="1.7" />
       <module name="taotao-content" target="1.7" />
       <module name="taotao-content-interface" target="1.7" />
