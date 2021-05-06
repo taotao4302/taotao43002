@@ -34,7 +34,7 @@
           <element id="archive" name="taotao-manager-interface-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-manager-interface" />
           </element>
-          <element id="archive" name="taotao-manager-com.taotao.pojo-1.0-SNAPSHOT.jar">
+          <element id="archive" name="taotao-manager-pojo-1.0-SNAPSHOT.jar">
             <element id="module-output" name="taotao-manager-pojo" />
           </element>
           <element id="archive" name="taotao-content-interface-1.0-SNAPSHOT.jar">
