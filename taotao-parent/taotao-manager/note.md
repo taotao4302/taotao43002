@@ -26,6 +26,9 @@ dao模块负责和数据库进行交互，有mapper文件
 也就是manager-dao工程下的com.taotao.com.taotao.mapper,这是因为taotao-manager-dao工程会被打包成jar包放到war工程下的WEB-INF/lib目录下,
 我们的applicationContext-dao.xml文件就是在war工程中，因此扫描是没有问题的。
 
+### 分页
+java.lang.NoClassDefFoundError: net/sf/jsqlparser/expression/Expression
+要去补jsqlparserjar包
 ### 配置spring事务控制
 applicationContext-trans..xml 文件下配置，使用的还是applicationContext-dao.xml中的数据源
 
