@@ -13,6 +13,10 @@
   <packaging>war</packaging>
 
   <dependencies>
+    <dependency>
+      <groupId>org.csource</groupId>
+      <artifactId>fastdfs-client-java</artifactId>
+    </dependency>
     <!-- 依赖taotao-common -->
     <dependency>
       <groupId>org.example</groupId>
