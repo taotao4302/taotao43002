@@ -73,6 +73,16 @@
       <artifactId>zkclient</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
 <!--    分页-->
     <dependency>
       <groupId>com.github.jsqlparser</groupId>
