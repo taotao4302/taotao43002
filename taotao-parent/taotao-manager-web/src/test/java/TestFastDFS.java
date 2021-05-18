@@ -7,6 +7,8 @@ import org.csource.fastdfs.TrackerClient;
 import org.csource.fastdfs.TrackerServer;
 import org.junit.Test;
 
+import java.io.File;
+
 public class TestFastDFS {
     @Test
     public void testUploadFile() throws Exception{
@@ -35,8 +37,37 @@ public class TestFastDFS {
     @Test
     public void testFastDFSClient() throws Exception{
         FastDFSClient fastDFSClient = new FastDFSClient("E:\\IDEA\\IDEAproject\\taotao430\\taotao-parent\\taotao-manager-web\\src\\main\\resources\\resource\\client.conf");
+
         String imgPath = fastDFSClient.uploadFile("C:\\Users\\song\\Pictures\\iCloud Photos\\Photos\\IMG_0041.jpg");
+
         System.out.println(imgPath);
+    }
+    @Test
+    public void getFile() throws Exception {
+        // get file list where the path has
+        String path = "E:\\QQ\\数据\\1154867045\\FileRecv\\淘淘商城开发课前资料\\day08（淘淘商城07 - Solr入门以及搜索系统实现）\\京东商品爬虫\\test";
+        File file = new File(path);
+        // get the folder list
+        File[] array = file.listFiles();
+
+        for(int i=0;i<array.length;i++){
+            if(array[i].isFile()){
+                // only take file name
+                //System.out.println(array[i].getName());
+                // take file path and name
+                //System.out.println("#####" + array[i]);
+                // take file path and name
+                //System.out.println(array[i].getPath());
+                FastDFSClient fastDFSClient = new FastDFSClient("E:\\IDEA\\IDEAproject\\taotao430\\taotao-parent\\taotao-manager-web\\src\\main\\resources\\resource\\client.conf");
+
+                String imgPath = fastDFSClient.uploadFile(array[i].getPath());
+                System.out.println(imgPath);
+                String newpath = "http://192.168.30.130:8888/" + imgPath;
+                String oldpath = "http://image.taotao.com/jd/" + array[i].getName();
+                System.out.println(newpath);
+                System.out.println(oldpath);
+            }
+        }
     }
 
 }

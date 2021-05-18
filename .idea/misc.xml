@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-service" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-search/taotao-search-service" />
   </component>
   <component name="MavenProjectsManager">

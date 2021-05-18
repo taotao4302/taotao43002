@@ -38,4 +38,7 @@ applicationContext-trans..xml 文件下配置，使用的还是applicationContex
 ### 初始化spring容器
 在web.xml中
 
-
+### ImagesUpload上传图片到fastDNS服务器并修改数据库中的地址
+imagesPathMapper
+imagesPathMapper.xml
+ImagePath

@@ -16,7 +16,10 @@
     <file url="file://$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-pojo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotao-parent/taotao-portal-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotao-parent/taotao-search-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotao-parent/taotao-search/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/taotao-parent/taotao-search/taotao-search-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotao-parent/taotao-search/taotao-search-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taotao-parent/taotao-search/taotao-search-service/src/main/resources" charset="UTF-8" />
   </component>
 </project>
