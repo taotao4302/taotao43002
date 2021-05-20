@@ -10,10 +10,21 @@ import com.taotao.pojo.TbItemExample;
 import com.taotao.service.ItemService;
 import com.taotao.common.utils.IDUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 import java.util.Date;
 import java.util.List;
 import com.taotao.mapper.TbItemDescMapper;
+
+import javax.annotation.Resource;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+import javax.jms.Message;
+
+
 /**
  * @author sqt
  */
@@ -23,6 +34,11 @@ public class ItemServiceImpl implements ItemService {
     private TbItemMapper itemMapper;
     @Autowired
     private TbItemDescMapper itemDescMapper;
+
+    @Autowired
+    private JmsTemplate jmsTemplate;
+    @Resource(name="itemAddTopic")
+    private Destination destination;
 
     @Override
     public TbItem getItemById(long itemId) {
@@ -49,7 +65,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public TaotaoResult createItem(TbItem tbItem, String desc)throws Exception{
         //生成商品ID
-        long itemId = IDUtils.genItemId();
+        final long itemId = IDUtils.genItemId();
         //补全item的属性
         tbItem.setId(itemId);
         //商品状态，1-正常，2-下架，3-删除
@@ -59,6 +75,15 @@ public class ItemServiceImpl implements ItemService {
         itemMapper.insert(tbItem);
         //添加商品描述
         insertItemDesc(itemId, desc);
+        //发送activemq消息
+        jmsTemplate.send(destination,new MessageCreator() {
+
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(itemId+"");
+                return textMessage;
+            }
+        });
         return TaotaoResult.ok();
     }
 
