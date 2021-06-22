@@ -16,6 +16,12 @@
         <module>taotao-search</module>
         <module>taotao-portal-web</module>
         <module>taotao-search-web</module>
+        <module>taotao-item-web</module>
+        <module>taotao-sso</module>
+        <module>taotao-sso-web</module>
+        <module>taotao-cart-web</module>
+        <module>taotao-order</module>
+        <module>taotao-order-web</module>
     </modules>
     <properties>
         <junit.version>4.12</junit.version>

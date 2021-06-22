@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author sqt
+ * @author swc
  */
 /*
 @Value("${IMAGE_SERVER_URL}")是为了注入我们在配置文件resource.properties中配置的图片访问前缀。

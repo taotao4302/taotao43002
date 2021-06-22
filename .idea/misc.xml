@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-cart-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-content/taotao-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-item-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-manager/taotao-manager-service" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-order-web" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-order/taotao-order-service" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-search/taotao-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-sso-web" />
+    <file type="web" url="file://$PROJECT_DIR$/taotao-parent/taotao-sso/taotao-sso-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/taotao-parent/pom.xml" />
         <option value="$PROJECT_DIR$/GeneratorSqlmap/pom.xml" />
+        <option value="$PROJECT_DIR$/taotao-parent/taotao-manager-web/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
