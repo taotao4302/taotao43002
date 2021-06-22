@@ -17,7 +17,7 @@ import com.taotao.pojo.TbContentCategoryExample;
 import com.taotao.pojo.TbContentCategoryExample.Criteria;
 
 /**
- * @author sqt
+ * @author swc
  */
 @Service
 public class ContentCategoryServiceImpl implements ContentCategoryService{

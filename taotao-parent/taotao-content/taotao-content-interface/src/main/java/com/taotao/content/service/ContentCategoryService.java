@@ -6,7 +6,7 @@ import com.taotao.common.pojo.TaotaoResult;
 import java.util.List;
 
 /**
- * @author sqt
+ * @author swc
  */
 public interface ContentCategoryService {
     //获取内容分类列表
